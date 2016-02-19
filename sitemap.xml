@@ -155,4 +155,20 @@
         
     
 
+    
+        
+    <url>
+     <loc>http://developer.pardot.com/kb/api-version-3/object-field-references/</loc>
+     <lastmod>2016-02-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://developer.pardot.com/kb/api-version-3/error-codes-messages/</loc>
+     <lastmod>2016-02-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
 </urlset>

@@ -1689,6 +1689,16 @@
             "location": "/kb/api-version-3/visits/#xml-response-formats", 
             "text": "rsp stat= ok  version= 1.0 \n     visit \n        ...\n         visitor_page_views \n             visitor_page_view \n                ...\n             /visitor_page_view \n         /visitor_page_views \n     /visit  /rsp      Tag  Description      visit  Parent tag. Contains data fields for target visit.  For complete field listing, see  Visit  in  Object Field References .    visitor_page_views  Contains all visitor page views associated with this visitor.  Contains only  visitor_page_view  tags.    visitor_page_view  Contains data fields for a visitor page view.  For complete field listing, see  Visitor Page View  in  Object Field References .", 
             "title": "XML Response Formats"
+        }, 
+        {
+            "location": "/kb/api-version-3/object-field-references/", 
+            "text": "", 
+            "title": "Object Field References"
+        }, 
+        {
+            "location": "/kb/api-version-3/error-codes-messages/", 
+            "text": "", 
+            "title": "Error Codes & Messages"
         }
     ]
 }
