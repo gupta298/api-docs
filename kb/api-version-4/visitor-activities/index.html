@@ -420,6 +420,48 @@
 <td>Selects visitor activities of the specified types. See a list of available <a href="../object-field-references#visitor-activity-types">Visitor Activity Types</a> in <a href="../object-field-references#visitor-activity">Visitor Activity</a> in <a href="../object-field-references">Object Field References</a>.</td>
 </tr>
 <tr>
+<td><strong>Object Types</strong>*</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>custom_url_only</code></td>
+<td><code>boolean</code></td>
+<td><code>true or false</code></td>
+<td>Selects visitor activities associated to custom urls.</td>
+</tr>
+<tr>
+<td><code>email_only</code></td>
+<td><code>boolean</code></td>
+<td><code>true or false</code></td>
+<td>Selects visitor activities associated to emails.</td>
+</tr>
+<tr>
+<td><code>file_only</code></td>
+<td><code>boolean</code></td>
+<td><code>true or false</code></td>
+<td>Selects visitor activities associated to files.</td>
+</tr>
+<tr>
+<td><code>form_only</code></td>
+<td><code>boolean</code></td>
+<td><code>true or false</code></td>
+<td>Selects visitor activities associated to forms.</td>
+</tr>
+<tr>
+<td><code>form_handler_only</code></td>
+<td><code>boolean</code></td>
+<td><code>true or false</code></td>
+<td>Selects visitor activities associated to form handlers.</td>
+</tr>
+<tr>
+<td><code>landing_page_only</code></td>
+<td><code>boolean</code></td>
+<td><code>true or false</code></td>
+<td>Selects visitor activities associated to landing pages.</td>
+</tr>
+<tr>
 <td><strong>Relationships</strong></td>
 <td></td>
 <td></td>
@@ -481,6 +523,9 @@
 </tr>
 </tbody>
 </table>
+<ul>
+<li>Only one object type filter can be applied at once</li>
+</ul>
 <h2 id="manipulating-the-result-set"><a href="#manipulating-the-result-set-"></a>Manipulating the Result Set</h2>
 <p>Since <code>query</code> result sets are limited to 200 results each, the results returned may not include all the visitor activities matched by the query. To retrieve the remaining results, the following criteria can be used to navigate through the result set.</p>
 <table>
@@ -515,7 +560,7 @@
 <td><code>sort_by</code></td>
 <td><code>string</code></td>
 <td><code>created_at, id, prospect_id, visitor_id</code></td>
-<td>Specifies the field that should be used to sort the results of the query. See <a href="#supported-sorting-options">Supported Sorting Options</a> for more details. <em>Default value:</em> <code>id</code>.</td>
+<td>Specifies the field that should be used to sort the results of the query. See <a href="#supported-sorting-options">Supported Sorting Options</a> for more details.</td>
 </tr>
 <tr>
 <td><code>sort_order</code></td>
