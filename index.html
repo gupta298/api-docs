@@ -65,6 +65,10 @@
                         <ul class="dropdown-menu">
                         
                             <li >
+                                <a href="kb/release-notes/">Release Notes</a>
+                            </li>
+                        
+                            <li >
                                 <a href="kb/api-version-4/">Version 4</a>
                             </li>
                         
@@ -293,8 +297,8 @@
                 
                 
                 <li>
-                    <a rel="prev" href="kb/api-version-4/">
-                    Version 4 <i class="fa fa-arrow-right"></i>
+                    <a rel="prev" href="kb/release-notes/">
+                    Release Notes <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
                 
@@ -347,6 +351,7 @@
 <li>If you have a question about the API, feel free to <a href="https://pardot.desk.com/">open a ticket</a> with our Support team.</li>
 <li>To report an inconsistency in the documentation, please <a href="https://github.com/Pardot/api-docs/issues">open an issue on GitHub</a>. <a href="https://github.com/Pardot/api-docs/pulls">Pull requests</a> are welcome as well!</li>
 <li>If you've written your own library or wrapper for Pardot's API, submit a <a href="https://github.com/Pardot/api-docs/pulls">pull request</a> updating the <code>index.md</code> file with a link to your repository, and we'll be glad to consider linking it up.</li>
+<li>For the latest information on updates to the API and related documentation, refer to the <a href="./kb/release-notes">Release Notes</a>.</li>
 </ul>
 <h2 id="using-the-api">Using the API</h2>
 <p>The Pardot API allows your application to access current data within Pardot. Through the API, several common operations can be performed on Pardot objects. Operations include:</p>
@@ -447,6 +452,7 @@ If your account requires version 3, you will not see this tag.</p>
 <li><code>full</code> -- Returns all supported data for the Pardot object and all objects associated with it.</li>
 <li><code>simple</code> -- Returns all supported data for the data for the Pardot object.</li>
 <li><code>mobile</code> -- Returns an abbreviated version of the object data. This output format is ideal for mobile applications.</li>
+<li><code>bulk</code> -- Returns basic data for an object (does not provide total object count). Used for querying <a href="./kb/bulk-data-pull/">large amounts of data</a>. </li>
 </ul>
 <p>If the output request parameter is not defined, the output format defaults to <code>full</code>. See the XML Response Format sections for each object for details about the formats.</p>
 <h2 id="authentication">Authentication</h2>
