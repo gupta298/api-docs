@@ -47,7 +47,7 @@
         }, 
         {
             "location": "/kb/release-notes/", 
-            "text": "Release Notes\n\n\nThis page contains the release notes for the Pardot API and related documentation.\n\n\nMarch 2017\n\n\nVisitor Activities\n\n\nquery\n end-point (v3-4):\n\n\n\n\nany email activity that is related to an email list will now include the list_email_id\n\n\nany email activity that is related to an email generated from an email template will include the email_template_id\n\n\nfilter visitor activities by various object types\n:\n\n\ncustom_url_only\n\n\nemail_only\n\n\nfile_only\n\n\nform_only\n\n\nform_handler_only\n\n\nlanding_page_only\n\n\n\n\n\n\n\n\nEmail\n\n\n\n\nwhen using the \nread\n end-point, you can exclude the email text and HTML body message from the response by setting \ninclude_message\n to false.\n\n\n\n\nOther\n\n\nMentions of default value: \nid\n for the \nsort_by\n query parameter have been removed from API documentation for clarity.", 
+            "text": "Release Notes\n\n\nThis page contains the release notes for the Pardot API and related documentation.\n\n\nMarch 2017\n\n\nVisitor Activities\n\n\nquery\n end-point (v3-4):\n\n\n\n\nany email activity that is related to an email list will now include the list_email_id\n\n\nany email activity that is related to an email generated from an email template will include the email_template_id\n\n\nfilter visitor activities by various object types\n:\n\n\ncustom_url_only\n\n\nemail_only\n\n\nfile_only\n\n\nform_only\n\n\nform_handler_only\n\n\nlanding_page_only\n\n\n\n\n\n\n\n\nEmail\n\n\n\n\nwhen using the \nread\n end-point, you can exclude the email text and HTML body message from the response by setting \ninclude_message\n to false.\n\n\n\n\nProspect\n\n\n\n\nprospect_account_id\n field is now returned by default on \nquery\n API calls. This includes calls made with the \noutput\n=\nbulk\n parameter.\n\n\n\n\nOther\n\n\nMentions of default value: \nid\n for the \nsort_by\n query parameter have been removed from API documentation for clarity.", 
             "title": "Release Notes"
         }, 
         {
@@ -69,6 +69,11 @@
             "location": "/kb/release-notes/#email", 
             "text": "when using the  read  end-point, you can exclude the email text and HTML body message from the response by setting  include_message  to false.", 
             "title": "Email"
+        }, 
+        {
+            "location": "/kb/release-notes/#prospect", 
+            "text": "prospect_account_id  field is now returned by default on  query  API calls. This includes calls made with the  output = bulk  parameter.", 
+            "title": "Prospect"
         }, 
         {
             "location": "/kb/release-notes/#other", 
