@@ -7,7 +7,7 @@
         
         
         <link rel="canonical" href="http://developer.pardot.com/kb/api-version-4/prospects/">
-        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="shortcut icon" href="../../../favicon.ico">
         
 
         <title>Prospects - Pardot API Documentation</title>
@@ -1018,6 +1018,7 @@
 <p><strong><em>Example:</em></strong></p>
 <p>/api/prospect/version/4/do/batchUpdate?prospects={"prospects":{"1337":{"first_name":"New first name","last_name":"New last name"},"1234":{"first_name":"New first name","last_name":"New last name"}}}&amp;api_key=&amp;user_key=</p>
 <p><strong>Note:</strong> The return value will either be XML or JSON (XML by default. If you want JSON, then add "&amp;format=json" to your HTTP query).</p>
+<p><strong>Note:</strong> If any errors are found during the batch process, an error array will be returned for only the prospects with issues. The error array will be key/value pairs where the key is the index of the prospect submitted in the request. All other prospects will be processed as expected.</p>
 <h2 id="updating-field-values"><a href="#updating-field-values-"></a>Updating Field Values</h2>
 <p>Modifying values of prospect data fields is done by submitting an <code>update</code> request with parameters for each field to be updated. Each parameter is formatted as <code>&lt;field_name&gt;=&lt;value&gt;</code>. Custom field values are updated using the same syntax.</p>
 <p><em><strong>Example:</strong> Updating the phone number of a prospect whose Pardot ID is</em> <code>300</code>: /api/prospect/version/4/do/update/id/300?phone=888-123-4567&amp;api_key=&amp;user_key=</p>
