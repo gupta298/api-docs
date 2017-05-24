@@ -390,7 +390,7 @@
 <td><code>query</code></td>
 <td><code>/api/prospect/version/3/do/query?...</code></td>
 <td><code>user_key, api_key</code></td>
-<td>Returns the prospects matching the specified criteria parameters. See [Using Prospects (using-prospects) for complete descriptions of prospect <a href="../using-prospects#xml-response-formats">XML Response Formats</a>. Also see <a href="../../object-field-references#prospect">Prospect</a> in <a href="../../object-field-references">Object Field References</a>.</td>
+<td>Returns the prospects matching the specified criteria parameters. See <a href="../prospects/#using-prospects">Using Prospects</a> for complete descriptions of prospect <a href="../prospects/#xml-response-formats">XML Response Formats</a>. Also see <a href="../../object-field-references#prospect">Prospect</a> in <a href="../../object-field-references">Object Field References</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -568,7 +568,7 @@
 <td><code>output</code></td>
 <td><code>string</code></td>
 <td><code>simple, mobile</code></td>
-<td>Specifies the format to be used when returning the results of the query. See <a href="../using-prospects#xml-response-formats">XML Response Formats</a> in <a href="../using-prospects">Using Prospects</a> for more details.</td>
+<td>Specifies the format to be used when returning the results of the query. See <a href="../prospects/#xml-response-formats">XML Response Formats</a> in <a href="../prospects/#using-prospects">Using Prospects</a> for more details.</td>
 </tr>
 <tr>
 <td><code>sort_by</code></td>
@@ -645,7 +645,7 @@
 </tr>
 <tr>
 <td><code>&lt;prospect&gt;</code></td>
-<td>The data for an individual Prospect. See <a href="../using-prospects">Using Prospects</a> for complete descriptions of prospect <a href="../using-prospects#xml-response-formats">XML Response Formats</a>. Also see <a href="../../object-field-references#prospect">Prospect</a> in <a href="../../object-field-references">Object Field References</a>. <strong><em>Note:</em></strong> Data concerning a prospect's profile criteria matchings, visitors, visitor activities, and list subscriptions will NOT be included in a <code>query</code> response. To retrieve this data, submit a <code>read</code> request for the prospect of interest.</td>
+<td>The data for an individual Prospect. See <a href="../prospects/#using-prospects">Using Prospects</a> for complete descriptions of prospect <a href="../prospects/#xml-response-formats">XML Response Formats</a>. Also see <a href="../../object-field-references#prospect">Prospect</a> in <a href="../../object-field-references">Object Field References</a>. <strong><em>Note:</em></strong> Data concerning a prospect's profile criteria matchings, visitors, visitor activities, and list subscriptions will NOT be included in a <code>query</code> response. To retrieve this data, submit a <code>read</code> request for the prospect of interest.</td>
 </tr>
 </tbody>
 </table>
@@ -908,7 +908,7 @@
 </tr>
 <tr>
 <td><code>&lt;list&gt;</code></td>
-<td>Contains data fields for an email list. For complete field listing, see <a href="../../object-field-references#email-list">Email List</a> in <a href="../.. object-field-references">Object Field References</a>.</td>
+<td>Contains data fields for an email list. For complete field listing, see <a href="../../object-field-references#email-list">Email List</a> in <a href="../../object-field-references">Object Field References</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -998,7 +998,7 @@
 <h2 id="updating-profile-criteria-matching-statuses"><a href="#updating-profile-criteria-matching-statuses-"></a>Updating Profile Criteria Matching Statuses</h2>
 <p>To modify a prospect's matching status for associated profile criteria, the Pardot ID of the profile criteria is required. Once the ID is obtained, an <code>update</code> is submitted with parameters formatted as <code>profile_criteria_&lt;profile_criteria_id&gt;=&lt;status&gt;</code>. The value of <code>&lt;status&gt;</code> may be either <code>match</code>, <code>nomatch</code>, or <code>unknown</code>.</p>
 <p><em><strong>Example:</strong> Setting a profile criteria for a prospect whose email address is</em> <code>bob@pardot.com</code> <em>to</em> <code>match</code>: /api/prospect/version/3/do/update/email/<a href="mailto:bob@pardot.com">bob@pardot.com</a>?profile_criteria_8=match&amp;api_key=&amp;user_key=<em><strong>Example:</strong> Setting a profile criteria for a prospect with Pardot ID</em> <code>58</code> <em>to</em> <code>nomatch</code>: /api/prospect/version/3/do/update/id/58?profile_criteria_8=nomatch&amp;api_key=&amp;user_key=</p>
-<p>Only profile criteria that belong to the profile associated with the prospect can be updated using this method. Requests to update profile criteria not associated with the assigned profile will be ignored. Using any matching status values other than <code>match</code>, <code>nomatch</code>, or <code>unknown</code> will result in an error message. See <a href="../error-codes-and-messages">Error Codes &amp; Messages</a> for details.</p>
+<p>Only profile criteria that belong to the profile associated with the prospect can be updated using this method. Requests to update profile criteria not associated with the assigned profile will be ignored. Using any matching status values other than <code>match</code>, <code>nomatch</code>, or <code>unknown</code> will result in an error message. See <a href="../../error-codes-messages">Error Codes &amp; Messages</a> for details.</p>
 <p><a name="14833-updating-prospect-account-matching-statuses" id="updating-prospect-account-matching-statuses"></a></p>
 <h2 id="updating-prospect-account-associations"><a href="#updating-prospect-account-associations-"></a>Updating Prospect Account Associations</h2>
 <p>To modify a prospect's matching status for associated prospect account, the Pardot ID of the prospect account is required. Once the ID is obtained, an <code>update</code> is submitted with parameters formatted as <code>prospect_account_id=&lt;id&gt;</code>.</p>
