@@ -353,15 +353,19 @@
 <li>updated "Reading Emails" section to correctly label the required param <code>email_id</code> instead of <code>email</code>.</li>
 <li>updated "Reading Emails" section to correctly label the required param <code>list_email_id</code> instead of <code>email</code>.</li>
 </ul>
-<h2 id="may-2017">May 2017</h2>
 <h3 id="prospects">Prospects</h3>
+<ul>
+<li>batchCreate/batchUpdate/batchUpsert endpoints now return an attributes node for JSON responses that lets the client know if the request was successful or not.</li>
+</ul>
+<h2 id="may-2017">May 2017</h2>
+<h3 id="prospects_1">Prospects</h3>
 <ul>
 <li>fixed various broken links in the documentation.</li>
 <li>fixed bug where the error array in the version 4 batch endpoints response was not correctly indexed.</li>
 <li>added information explaining the error response when using batch actions in v4.</li>
 </ul>
 <h2 id="april-2017">April 2017</h2>
-<h3 id="prospects_1">Prospects</h3>
+<h3 id="prospects_2">Prospects</h3>
 <p><code>read</code> end-point (v4):</p>
 <ul>
 <li>This update will bring the v4 read end point into sync with the v3 end point. Archived prospects previously included in <code>read</code> responses will now be excluded when <code>email</code> is used to identify the target prospect.</li>
