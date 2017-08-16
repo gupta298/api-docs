@@ -692,13 +692,13 @@
 <td><code>create</code></td>
 <td><code>/api/prospect /version/4 /do/create/ email/&lt;email&gt;?...</code></td>
 <td><code>user_key, api_key, email, (fid)</code></td>
-<td>Creates a new prospect using the specified data. <code>&lt;email&gt;</code> must be a valid email address. May optionally include a crm fid <code>&lt;fid&gt;</code>. Email list subscriptions and custom field data may also be added with this request. Refer to the <a href="#updating-email-list-subscriptions">Updating Email List Subscriptions</a> and <a href="#14833-updating-field-values">Updating Field Values</a> sections for more details.</td>
+<td>Creates a new prospect using the specified data. <code>&lt;email&gt;</code> must be a valid email address. May optionally include a crm fid <code>&lt;fid&gt;</code>. Email list subscriptions and custom field data may also be added with this request. Refer to the <a href="#updating-email-list-subscriptions">Updating Email List Subscriptions</a> and <a href="#14833-updating-field-values">Updating Field Values</a> sections for more details. <strong><em>Note:</em></strong> The prospect may be assigned to a user by supplying a value for the optional <code>&lt;user_id&gt;</code> parameter.</td>
 </tr>
 <tr>
 <td><code>batchCreate</code></td>
 <td><code>/api/prospect /version/4 /do/batchCreate? prospects=&lt;data&gt;...</code></td>
 <td><code>user_key, api_key, prospects</code></td>
-<td>Creates new prospects using the provided <code>&lt;data&gt;</code> in either XML or JSON. See <a href="#endpoints-for-batch-processing">Endpoints for Batch Processing</a></td>
+<td>Creates new prospects using the provided <code>&lt;data&gt;</code> in either XML or JSON. See <a href="#endpoints-for-batch-processing">Endpoints for Batch Processing</a> <strong><em>Note:</em></strong> The prospect may be assigned to a user by supplying a value for the optional <code>&lt;user_id&gt;</code> parameter.</td>
 </tr>
 <tr>
 <td><code>read</code></td>
@@ -740,13 +740,13 @@
 <td><code>upsert</code></td>
 <td><code>/api/prospect /version/4 /do/upsert/ {id/&lt;id&gt; AND/OR fid/&lt;fid&gt; AND/OR email/&lt;email&gt;}?...</code></td>
 <td><code>user_key, api_key, (id, fid, email)</code></td>
-<td><a href="#upserting-prospects">Upserting a Prospect</a></td>
+<td><a href="#upserting-prospects">Upserting a Prospect</a>. <strong><em>Note:</em></strong> The prospect may be assigned to a user by supplying a value for the optional <code>&lt;user_id&gt;</code> parameter.</td>
 </tr>
 <tr>
 <td><code>batchUpsert</code></td>
 <td><code>/api/prospect /version/4 /do/batchUpsert? prospects=&lt;data&gt;...</code></td>
 <td><code>user_key, api_key, prospects</code></td>
-<td>Updates prospects using the provided <code>&lt;data&gt;</code> in either XML or JSON. See <a href="#endpoints-for-batch-processing">Endpoints for Batch Processing</a></td>
+<td>Updates prospects using the provided <code>&lt;data&gt;</code> in either XML or JSON. See <a href="#endpoints-for-batch-processing">Endpoints for Batch Processing</a>.<strong><em>Note:</em></strong> The prospect may be assigned to a user by supplying a value for the optional <code>&lt;user_id&gt;</code> parameter.</td>
 </tr>
 <tr>
 <td><code>delete</code></td>
