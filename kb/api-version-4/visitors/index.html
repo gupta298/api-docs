@@ -561,8 +561,8 @@
 <tr>
 <td><code>assign</code></td>
 <td><code>/api/visitor/version/4/do/assign/id/&lt;id&gt;?...</code></td>
-<td><code>user_key, api_key, id, (prospect_email OR prospect_id)</code></td>
-<td>Assigns or reassigns the visitor specified by <code>&lt;id&gt;</code> to a specified prospect.  One (and only one) of the following parameters must be provided to identify the target prospect: <code>&lt;prospect_email&gt;</code> or <code>&lt;prospect_id&gt;</code>.  Returns an updated version of the visitor.</td>
+<td><code>user_key, api_key, id, prospect_id</code></td>
+<td>Assigns or reassigns the visitor specified by <code>&lt;id&gt;</code> to a specified prospect.  The <code>&lt;prospect_id&gt;</code> parameters must be provided to identify the target prospect.</td>
 </tr>
 <tr>
 <td><code>read</code></td>
