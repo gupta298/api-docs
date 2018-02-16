@@ -613,7 +613,7 @@
 <pre><code>&lt;rsp stat=&quot;ok&quot; version=&quot;1.0&quot;&gt;
     &lt;result&gt;
         &lt;total_results&gt;...&lt;/total_results&gt;
-        &lt;visitorActivity&gt;...&lt;/visitorActivity&gt;
+        &lt;visitor_activity&gt;...&lt;/visitor_activity&gt;
             ...
     &lt;/result&gt;
 &lt;/rsp&gt;
@@ -636,7 +636,7 @@
 <td>Contains the number of visitor activities selected by this query. If this value is higher than 200, then several query requests may be necessary to retrieve all of the matched visitor activities.</td>
 </tr>
 <tr>
-<td><code>&lt;visitorActivity&gt;</code></td>
+<td><code>&lt;visitor_activity&gt;</code></td>
 <td>The data for an individual visitor activity. See <a href="../visitors-activities">Using Visitor Activities</a> for complete descriptions of visitor activity <a href="../visitor-activities#xml-response-formats">XML Response Formats</a>. Also see <a href="../../object-field-references#visitor-activity">Visitor Activity</a> in <a href="../../object-field-references">Object Field References</a>.</td>
 </tr>
 </tbody>
@@ -664,9 +664,9 @@
 </table>
 <h2 id="xml-response-formats">XML Response Formats</h2>
 <pre><code>&lt;rsp stat=&quot;ok&quot; version=&quot;1.0&quot;&gt;
-    &lt;visitorActivity&gt;
+    &lt;visitor_activity&gt;
         ...
-    &lt;/visitorActivity&gt;
+    &lt;/visitor_activity&gt;
 &lt;/rsp&gt;
 </code></pre>
 
@@ -679,7 +679,7 @@
 </thead>
 <tbody>
 <tr>
-<td><code>&lt;visitorActivity&gt;</code></td>
+<td><code>&lt;visitor_activity&gt;</code></td>
 <td>Parent tag. Contains data fields for target visitorActivity. For complete field listing, see <a href="../../object-field-references#visitor-activity">Visitor Activity</a> in <a href="../../object-field-references">Object Field References</a>.</td>
 </tr>
 </tbody>

@@ -567,13 +567,13 @@
 <td><code>update</code></td>
 <td><code>/api/campaign/version/3/do/update/id/</code><strong><em><code>&lt;id&gt;</code></em></strong><code>?...</code></td>
 <td><code>user_key, api_key, id</code></td>
-<td>Updates the provided data for the campaign specified by <code>&lt;id&gt;</code>.  <code>&lt;id&gt;</code> is the Pardot ID of the campaign. Refer to <a href="../../object-field-references#campaign">Campaign</a> in <a href="../../object-field-references">Object Field References</a> for more details. Returns the updated version of the campaign.</td>
+<td>Updates the provided data for the campaign specified by <code>&lt;id&gt;</code>.  <code>&lt;id&gt;</code> is the Pardot ID of the campaign. Refer to <a href="../../object-field-references#campaign">Campaign</a> in <a href="../../object-field-references">Object Field References</a> for more details. Returns the updated version of the campaign. <strong><em>Note:</em></strong> If the Campaign Alignment feature is enabled, <code>name</code> and <code>cost</code> are not updateable.</td>
 </tr>
 <tr>
 <td><code>create</code></td>
 <td><code>/api/campaign/version/3/do/create?...</code></td>
 <td><code>user_key, api_key</code></td>
-<td>Creates a new campaign using the specified data.</td>
+<td>Creates a new campaign using the specified data. <strong><em>Note:</em></strong> If the Campaign Alignment feature is enabled, the <code>create</code> operation is not allowed.</td>
 </tr>
 </tbody>
 </table>
