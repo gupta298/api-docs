@@ -569,6 +569,8 @@
         
             <li><a href="#error-code-126">Error Code: 126</a></li>
         
+            <li><a href="#error-code-131">Error Code: 131</a></li>
+        
             <li><a href="#error-code-10000">Error Code: 10000</a></li>
         
     
@@ -1652,7 +1654,7 @@ requests.</p>
 &lt;/rsp&gt;
 </code></pre>
 
-<p><strong>Problem</strong>: Unable to create a refresh token for the Salesforce connector for authentication. </p>
+<p><strong>Problem</strong>: Unable to create a refresh token for the Salesforce connector for authentication.</p>
 <p><strong>Solution</strong>: Resubmit the request to try again. If the problem persists, contact support.</p>
 <h2 id="error-code-120"><a href="#error-code-120"></a>Error Code: 120</h2>
 <pre><code>&lt;rsp stat=&quot;fail&quot; version=&quot;1.0&quot;&gt;
@@ -1710,6 +1712,14 @@ requests.</p>
 
 <p><strong>Problem</strong>: This authentication method has been deprecated.</p>
 <p><strong>Solution</strong>: Resubmit the request using a valid <a href="../../#authentication">authentication</a> method.</p>
+<h2 id="error-code-131"><a href="#error-code-131"></a>Error Code: 131</h2>
+<pre><code>&lt;rsp stat=&quot;fail&quot; version=&quot;1.0&quot;&gt;
+    &lt;err code=&quot;131&quot;&gt;Your account is locked due to too many failed login attempts. Reset your password at https://pi.pardot.com/user/passwordReset&lt;/err&gt;
+&lt;/rsp&gt;
+</code></pre>
+
+<p><strong>Problem</strong>: Too many invalid api requests have been made.</p>
+<p><strong>Solution</strong>: Reset your password at https://pi.pardot.com/user/passwordReset</p>
 <h2 id="error-code-10000"><a href="#error-code-10000"></a>Error Code: 10000</h2>
 <pre><code>&lt;rsp stat=&quot;fail&quot; version=&quot;1.0&quot;&gt;
     ...
